@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/elan"
+            android:text="Elan"
+            android:textStyle="bold"
+            android:textColor="@color/special"
+            android:textSize="64sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad"
+            android:text="İstifadəçi adı"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_below="@id/elan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad_text"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="İstifadəçi adınızı daxil edin"
+            android:layout_below="@id/ad"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product"
+            android:text="Məhsulun adı"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_below="@id/ad_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_text"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="Məhsulun adını daxil edin"
+            android:layout_below="@id/product"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reng"
+            android:text="Məhsulun rəngi"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_below="@id/product_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reng_text"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="Məhsulun rəngini daxil edin"
+            android:layout_below="@id/reng"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qiymet"
+            android:text="Məhsulun qiyməti"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_below="@id/reng_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/qiymet_text"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="Məhsulun qiymətini daxil edin"
+            android:layout_below="@id/qiymet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/say"
+            android:text="Məhsulun sayı"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_below="@id/qiymet_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/say_text"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="Məhsulun sayını daxil edin"
+            android:layout_below="@id/say"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/elan_et"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Elan et"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/say_text"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/collingar"/>
+    </RelativeLayout>
+
+</ScrollView>

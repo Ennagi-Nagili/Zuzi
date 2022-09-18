@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dani.zuzi">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Zuzi">
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".Company_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".People_Info"
+            android:exported="false" />
+        <activity
+            android:name=".Direct"
+            android:exported="false" />
+        <activity
+            android:name=".Info"
+            android:exported="false" />
+        <activity
+            android:name=".Question"
+            android:exported="false" />
+        <activity
+            android:name=".Register_people"
+            android:exported="false" />
+        <activity
+            android:name=".Zoom"
+            android:exported="false" />
+        <activity
+            android:name=".Details"
+            android:exported="false" />
+        <activity
+            android:name=".Intro"
+            android:exported="false" />
+        <activity
+            android:name=".Technology"
+            android:exported="false" />
+        <activity
+            android:name=".Sport"
+            android:exported="false" />
+        <activity
+            android:name=".Food"
+            android:exported="false" />
+        <activity
+            android:name=".Health"
+            android:exported="false" />
+        <activity
+            android:name=".Spare"
+            android:exported="false" />
+        <activity
+            android:name=".Forget"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

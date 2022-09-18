@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_drawer">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_image"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:shapeAppearanceOverlay="@style/Circular"
+        android:background="@drawable/ic_profile"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/add_image"
+        android:text="add image"
+        android:layout_below="@id/profile_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/collingar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_name"
+        android:text="İstifadəçi adı: Arif"
+        android:textSize="24sp"
+        android:textColor="@color/special"
+        android:textStyle="bold"
+        android:layout_below="@id/add_image"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/collingar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_email"
+        android:text="Mail: arif@gmail.com"
+        android:textSize="24sp"
+        android:textColor="@color/special"
+        android:textStyle="bold"
+        android:layout_below="@id/nav_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/collingar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_fame"
+        android:text="Məşhurluq"
+        android:textSize="24sp"
+        android:textColor="@color/special"
+        android:textStyle="bold"
+        android:layout_below="@id/nav_email"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/collingar"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/fame"
+        android:layout_below="@id/nav_email"
+        android:layout_toRightOf="@id/nav_fame"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_contact"
+            android:text="Kontakt sayı: 18"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:textStyle="bold"
+            android:layout_below="@id/nav_fame"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/collingar"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:id="@+id/info"
+        android:layout_below="@id/nav_contact"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Məlumatlarınız"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/collingar"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:id="@+id/logout"
+            android:layout_below="@id/info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Çıxış et"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/collingar"/>
+
+    </RelativeLayout>

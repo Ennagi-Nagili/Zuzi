@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_text"
+            android:text="Qeydiyyatdan keç"
+            android:textColor="@color/special"
+            android:textStyle="bold"
+            android:textSize="42sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_text"
+            android:text="İstifadəçi adı"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/signup_text"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="İstifadəçi adınızı daxil edin"
+            android:layout_below="@id/name_text"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:id="@+id/company_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Əlaqə nömrəsi"
+            android:textColor="@color/special"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:id="@+id/register_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_contact"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Əlaqə nömrənizi daxil edin"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/special"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_text"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/register_contact"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_email"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="Email ünvanınızı daxil edin"
+            android:layout_below="@id/email_text"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_text"
+            android:text="Şifrə"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/register_email"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="Şifrənizi daxil edin"
+            android:layout_below="@id/password_text"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_repeat"
+            android:text="Təsdiqlə"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/register_password"
+            android:fontFamily="@font/collingar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_repeat"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:maxLines="1"
+            android:hint="Şifrənizi yenidən daxil edin"
+            android:layout_below="@id/password_repeat"
+            android:fontFamily="@font/collingar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/signUp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Qeydiyyatdan keç"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/register_repeat"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Artıq hesabınız var ?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/collingar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_login"
+            android:text="Daxil ol"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/special"
+            android:layout_below="@id/signUp"
+            android:layout_toRightOf="@id/account"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/collingar"/>
+
+    </RelativeLayout>
+
+</ScrollView>

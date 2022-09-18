@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "136501856240",
+    "project_id": "zuzi-bc828",
+    "storage_bucket": "zuzi-bc828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136501856240:android:423a2e57084d8aa8f8bf35",
+        "android_client_info": {
+          "package_name": "com.dani.zuzi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136501856240-tksttlo9u901ba8e5p9la073312o20du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYstpiPEHKlxBc2SNl5qE2BeD9C-kTs1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136501856240-tksttlo9u901ba8e5p9la073312o20du.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
